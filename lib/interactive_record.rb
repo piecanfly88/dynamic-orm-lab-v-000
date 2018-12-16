@@ -28,6 +28,8 @@ class InteractiveRecord
   end
   
   def table_name_for_insert
-    
+    sql = <<-SQL
+      CREATE TABLE '#{table_name}'
+    SQL
   end
 end
